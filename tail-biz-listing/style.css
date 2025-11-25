@@ -1,1 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 @import "tailwindcss";
+
+@theme {
+  --color-mint-500: oklch(0.72 0.11 178);
+  --font-comf: "Comfortaa", 'sans-serif';
+  --font-lora: 'Lora', 'serif';
+  --font-nun: "Nunito", 'sans-serif';
+  --font-libre: 'Liber Baskerville', 'serif';
+  --font-monte: "Montserrat", 'sans-serif';
+  --default-font-family: 'Nunito', var(--font-sans);
+}
