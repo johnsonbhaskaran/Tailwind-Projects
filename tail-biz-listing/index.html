@@ -967,7 +967,31 @@
     </footer>
   </div>
 
+  <!-- Script -->
+  <script>
+    window.addEventListener('scroll', listenScroll);
 
+    function listenScroll() {
+      const navbar = document.querySelector('.navbar');
+      // get the reference
+      const heroHeader = document.querySelector('.hero-header');
+      const referencePassed = (window.scrollY + heroHeader.getBoundingClientRect().height) > heroHeader.offsetTop;
+      const navClassNames = referencePassed ? ['transparent-nav', 'bg-nav'] : ['bg-nav', 'transparent-nav'];
+
+      navbar.classList.replace(...navClassNames)
+
+      // for navbar text color
+      // const bannerDimension = document.querySelector('.hero-banner').getBoundingClientRect();
+
+      // check if hero banner image is passed
+      // const bannerPassed = bannerDimension.top + bannerDimension.height <= 38;
+      // const navTextColor = bannerPassed ? ['text-white', 'text-gray-700'] : ['text-gray-700', 'text-white']
+
+      // navbar.classList.replace(...navTextColor);
+    }
+
+    listenScroll();
+  </script>
 </body>
 
 </html>
