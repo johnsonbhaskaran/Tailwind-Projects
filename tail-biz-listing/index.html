@@ -12,29 +12,31 @@
 
 <body class="text-white">
   <!-- navigation bar -->
-  <nav class="right-0 left-0 z-10 absolute">
-    <div class="flex justify-between items-center mx-auto py-5 w-9/12 font-comf">
-      <div>
-        <a href="#" class="text-lg">Tail Listing</a>
-      </div>
-      <div>
-        <button
-          class="order-amber-500 bg-transparent hover:bg-amber-500 px-4 py-2 border rounded-md text-amber-500 hover:text-white transition-all ease-in-out delay-100 cursor-pointer b">Add
-          Listing</button>
-      </div>
-      <div class="space-x-4">
-        <button class="text-lg">Sign In</button>
-        <button class="text-lg">Sign Up</button>
-      </div>
-  </nav>
+  <div class="sticky top-0 z-50">
+    <nav class="navbar right-0 left-0 z-10 absolute transparent-nav border-b border-white/10">
+      <div class="flex justify-between items-center mx-auto py-5 w-9/12 font-comf">
+        <div>
+          <a href="#" class="text-lg">Tail Listing</a>
+        </div>
+        <div>
+          <button
+            class="order-amber-500 bg-transparent hover:bg-amber-500/70 px-4 py-2 border rounded-md text-amber-500 hover:text-white transition-all ease-in-out delay-100 cursor-pointer b">Add
+            Listing</button>
+        </div>
+        <div class="space-x-4">
+          <button class="text-lg">Sign In</button>
+          <button class="text-lg">Sign Up</button>
+        </div>
+    </nav>
+  </div>
   <!-- hero banner -->
   <section class="relative h-screen">
     <img src="./assets/images/hero/hero_4.jpg" class="w-full h-full object-cover" alt="image">
-    <div class="absolute inset-0 bg-black/50"></div>
+    <div class="absolute inset-0 bg-black/75"></div>
     <div class="absolute inset-0 w-full h-full">
       <div class="flex justify-center items-center w-full min-h-full">
         <div class="space-y-6">
-          <div class="text-center">
+          <div class="text-center hero-header">
             <p class="mb-4 font-comf font-bold text-4xl uppercase">Discover places that people love</p>
             <p class="text-lg">We will help you to find the best places in the World.</p>
           </div>
@@ -465,7 +467,101 @@
         </div>
       </div>
     </section>
-  </div>
+    <!-- Discover by Collections -->
+    <section class="bg-slate-100 py-32">
+      <div class="mx-auto w-9/12 xl:w-7/12">
+        <div class="mb-12 text-gray-600 text-center">
+          <p class="mb-3 font-bold text-4xl">Discover by Collections</p>
+          <p>Discover List of Top Places by Collection</p>
+        </div>
+        <div>
+          <div class="gap-10 grid grid-cols-4">
+            <!-- Collection 1 -->
+            <div class="relative hover:shadow-lg aspect-3/4 overflow-hidden">
+              <img src="./assets/images/dental 1.jpg" class="shadow rounded w-full h-full object-cover" alt="dental">
+              <div class="absolute inset-0 bg-linear-to-t from-black via-transparent to-transparent rounded"></div>
+              <div class="bottom-2 left-3 absolute">
+                <p class="font-semibold text-white text-lg">Newly Opened</p>
+                <p class="text-white text-sm">21 Places</p>
+              </div>
+            </div>
+            <!-- Collection 2 -->
+            <div class="relative hover:shadow-lg aspect-3/4 overflow-hidden">
+              <img src="./assets/images/247885282_428899745318874_4537354239597400518_n.jpg"
+                class="shadow rounded w-full h-full object-cover" alt="dental">
+              <div class="absolute inset-0 bg-linear-to-t from-black via-transparent to-transparent rounded"></div>
+              <div class="bottom-2 left-3 absolute">
+                <p class="font-semibold text-white text-lg">Newly Opened</p>
+                <p class="text-white text-sm">21 Places</p>
+              </div>
+            </div>
+            <!-- Collection 3 -->
+            <div class="relative hover:shadow-lg aspect-3/4 overflow-hidden">
+              <img
+                src="./assets/images/81782419-mobile-phone-repair-at-service-center-smartphone-dissasembling-and-diagnostic-repairman-workplace-to.jpg"
+                class="shadow rounded w-full h-full object-cover" alt="dental">
+              <div class="absolute inset-0 bg-linear-to-t from-black via-transparent to-transparent rounded"></div>
+              <div class="bottom-2 left-3 absolute">
+                <p class="font-semibold text-white text-lg">Newly Opened</p>
+                <p class="text-white text-sm">21 Places</p>
+              </div>
+            </div>
+            <!-- Collection 4 -->
+            <div class="relative hover:shadow-lg aspect-3/4 overflow-hidden">
+              <img src="./assets/images/dental 2.jpg" class="shadow rounded w-full h-full object-cover" alt="dental">
+              <div class="absolute inset-0 bg-linear-to-t from-black via-transparent to-transparent rounded"></div>
+              <div class="bottom-2 left-3 absolute">
+                <p class="font-semibold text-white text-lg">Newly Opened</p>
+                <p class="text-white text-sm">21 Places</p>
+              </div>
+            </div>
+            <!-- Collection 5 -->
+            <div class="relative hover:shadow-lg aspect-3/4 overflow-hidden">
+              <img src="./assets/images/dental 3.jpg" class="shadow rounded w-full h-full object-cover" alt="dental">
+              <div class="absolute inset-0 bg-linear-to-t from-black via-transparent to-transparent rounded"></div>
+              <div class="bottom-2 left-3 absolute">
+                <p class="font-semibold text-white text-lg">Newly Opened</p>
+                <p class="text-white text-sm">21 Places</p>
+              </div>
+            </div>
+            <!-- Collection 6 -->
+            <div class="relative hover:shadow-lg aspect-3/4 overflow-hidden">
+              <img src="./assets/images/dental 4.jpg" class="shadow rounded w-full h-full object-cover" alt="dental">
+              <div class="absolute inset-0 bg-linear-to-t from-black via-transparent to-transparent rounded"></div>
+              <div class="bottom-2 left-3 absolute">
+                <p class="font-semibold text-white text-lg">Newly Opened</p>
+                <p class="text-white text-sm">21 Places</p>
+              </div>
+            </div>
+            <!-- Collection 7 -->
+            <div class="relative hover:shadow-lg aspect-3/4 overflow-hidden">
+              <img src="./assets/images/dental 5.jpg" class="shadow rounded w-full h-full object-cover" alt="dental">
+              <div class="absolute inset-0 bg-linear-to-t from-black via-transparent to-transparent rounded"></div>
+              <div class="bottom-2 left-3 absolute">
+                <p class="font-semibold text-white text-lg">Newly Opened</p>
+                <p class="text-white text-sm">21 Places</p>
+              </div>
+            </div>
+            <!-- Collection 8 -->
+            <div class="relative hover:shadow-lg aspect-3/4 overflow-hidden">
+              <img src="./assets/images/20210221-KXCoffeeGym29.jpg" class="shadow rounded w-full h-full object-cover"
+                alt="dental">
+              <div class="absolute inset-0 bg-linear-to-t from-black via-transparent to-transparent rounded"></div>
+              <div class="bottom-2 left-3 absolute">
+                <p class="font-semibold text-white text-lg">Newly Opened</p>
+                <p class="text-white text-sm">21 Places</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-12 text-center">
+          <button
+            class="bg-white shadow hover:shadow-lg px-6 py-2.5 border border-gray-100 rounded-md text-gray-600 text-lg">🎁
+            More Collections</button>
+        </div>
+      </div>
+    </section>
+
 </body>
 
 </html>
