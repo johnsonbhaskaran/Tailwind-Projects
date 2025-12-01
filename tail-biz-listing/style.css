@@ -10,3 +10,19 @@
   --font-monte: "Montserrat", 'sans-serif';
   --default-font-family: 'Nunito', var(--font-sans);
 }
+
+@layer components {
+  .transparent-nav {
+    @apply bg-transparent backdrop-blur-md;
+  }
+
+  .bg-nav {
+    @apply bg-white text-gray-600
+  }
+}
+
+.bg-svg {
+  /* background-color: #DFDBE5; */
+  background-color: transparent;
+  background-image: url(./assets/images/res-pic\ \(5\).jpg);
+}
