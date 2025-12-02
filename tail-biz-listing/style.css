@@ -13,11 +13,11 @@
 
 @layer components {
   .transparent-nav {
-    @apply bg-transparent backdrop-blur-md;
+    @apply bg-transparent backdrop-blur-md shadow-md;
   }
 
   .bg-nav {
-    @apply bg-white text-gray-600
+    @apply bg-white text-gray-600 shadow-xl
   }
 }
 

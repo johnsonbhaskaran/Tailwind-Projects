@@ -14,33 +14,33 @@
   <!-- navigation bar -->
   <div class="sticky top-0 z-50">
     <nav class="navbar right-0 left-0 z-10 absolute transparent-nav border-b border-white/10">
-      <div class="flex justify-between items-center mx-auto py-5 w-9/12 font-comf">
+      <div class="flex justify-between items-center mx-auto py-5 px-5 md:px-0 md:w-9/12 font-comf">
         <div>
-          <a href="#" class="text-lg">Tail Listing</a>
+          <a href="#" class="text-md md:text-lg">Tail Listing</a>
         </div>
         <div>
           <button
-            class="order-amber-500 bg-transparent hover:bg-amber-500/70 px-4 py-2 border rounded-md text-amber-500 hover:text-white transition-all ease-in-out delay-100 cursor-pointer b">Add
+            class="order-amber-500 bg-transparent hover:bg-amber-500/70 px-4 py-2 border rounded-md text-amber-500 hover:text-white transition-all ease-in-out delay-100 cursor-pointer text-sm lg:text-lg">Add
             Listing</button>
         </div>
-        <div class="space-x-4">
-          <button class="text-lg">Sign In</button>
-          <button class="text-lg">Sign Up</button>
+        <div class="space-x-2 md:space-x-4">
+          <button class="text-sm md:text-md lg:text-lg">Sign In</button>
+          <button class="text-sm md:text-md lg:text-lg">Sign Up</button>
         </div>
     </nav>
   </div>
   <!-- hero banner -->
-  <section class="relative h-screen">
-    <img src="./assets/images/hero/hero_4.jpg" class="w-full h-full object-cover" alt="image">
+  <section class="relative h-screen bg-cover" style="background-image: url('./assets/images/hero/hero_4.jpg');">
+    <!-- <img src="./assets/images/hero/hero_4.jpg" class="w-full h-full object-cover" alt="image"> -->
     <div class="absolute inset-0 bg-black/75"></div>
-    <div class="absolute inset-0 w-full h-full">
+    <div class="absolute inset-0 w-full h-full hero-header">
       <div class="flex justify-center items-center w-full min-h-full">
         <div class="space-y-6">
-          <div class="text-center hero-header">
-            <p class="mb-4 font-comf font-bold text-4xl uppercase">Discover places that people love</p>
-            <p class="text-lg">We will help you to find the best places in the World.</p>
+          <div class="text-center">
+            <p class="mb-4 font-comf font-bold text-3xl md:text-4xl uppercase">Discover places that people love</p>
+            <p class="text-lg w-8/12 mx-auto">We will help you to find the best places in the World.</p>
           </div>
-          <div class="flex gap-5">
+          <div class="flex gap-5 flex-col lg:flex-row items-center">
             <div>
               <input type="text" placeholder="Location"
                 class="bg-white px-4 py-3 rounded-md focus:outline-none w-80 text-gray-600">
@@ -51,12 +51,12 @@
             </div>
             <div>
               <button
-                class="bg-amber-500 hover:bg-amber-600 px-6 py-2.5 rounded-md text-white text-lg cursor-pointer"><span
+                class="bg-amber-500 hover:bg-amber-600 px-4 lg:px-6 py-2 lg:py-2.5 rounded-md text-white text-md lg:text-lg cursor-pointer"><span
                   class="hidden md:inline-flex mr-1 align-text-top material-icons">search</span>Search</button>
             </div>
           </div>
-          <div>
-            <ul class="flex justify-center gap-5 text-sm">
+          <div class="w-9/12 md:w-full mx-auto">
+            <ul class="flex justify-center gap-5 text-xs sm:text-sm flex-wrap">
               <li class="uppercase">
                 <a href="#" class="hover:text-amber-500">
                   <span class="hidden md:inline-flex align-middle material-icons">restaurant_menu</span>
@@ -103,13 +103,13 @@
   <div>
     <!-- Popular Places -->
     <section class="bg-gray-50 py-32">
-      <div class="mx-auto w-9/12 xl:w-7/12">
+      <div class="mx-auto w-9/12 2xl:w-7/12">
         <div class="mb-12 text-gray-600 text-center">
           <p class="mb-3 font-bold text-4xl">Popular Places</p>
           <p>Discover Most Searched Places</p>
         </div>
         <div>
-          <div class="gap-10 grid grid-cols-3 mx-auto">
+          <div class="gap-10 grid lg:grid-cols-3 sm:grid-cols-2 mx-auto">
             <!-- card 1 -->
             <div class="bg-white shadow rounded-md  overflow-hidden hover:shadow-xl transition-all">
               <div class="h-48 overflow-hidden">
@@ -394,15 +394,15 @@
     </section>
     <!-- Discover by Categories -->
     <section class="bg-sky-50 py-32">
-      <div class="mx-auto w-9/12 xl:w-7/12">
+      <div class="mx-auto sm:w-8/12">
         <div class="mb-12 text-gray-600 text-center">
           <p class="mb-3 font-bold text-4xl">Discover by Categories</p>
           <p>Discover Places by Categories</p>
         </div>
         <div>
-          <div class="gap-10 grid grid-cols-4">
+          <div class="gap-5 md:gap-10 grid xl:grid-cols-4 lg:grid-cols-3 grid-cols-2 place-self-center">
             <!-- icon container 1 -->
-            <a class="space-y-5 bg-white shadow hover:shadow-lg p-4 rounded-lg w-48 xl:w-64" href="#">
+            <a class="space-y-5 bg-white shadow hover:shadow-lg p-4 rounded-lg w-48 xl:w-52" href="#">
               <img src="./assets/images/icons/566024_coffee_cafe_cup_drink_espresso_icon.png"
                 class="mx-auto rounded-full size-20 lg:size-32">
               <div class="space-y-2 text-center">
@@ -410,7 +410,7 @@
               </div>
             </a>
             <!-- icon container 2 -->
-            <a class="space-y-5 bg-white shadow hover:shadow-lg p-4 rounded-lg w-48 xl:w-64" href="#">
+            <a class="space-y-5 bg-white shadow hover:shadow-lg p-4 rounded-lg w-48 xl:w-52" href="#">
               <img src="./assets/images/icons/531911_camera_device_entertainment_film_media_icon.png"
                 class="mx-auto rounded-full size-20 lg:size-32">
               <div class="space-y-2 text-center">
@@ -418,42 +418,42 @@
               </div>
             </a>
             <!-- icon container 3 -->
-            <a class="space-y-5 bg-white shadow hover:shadow-lg p-4 rounded-lg w-48 xl:w-64" href="#">
+            <a class="space-y-5 bg-white shadow hover:shadow-lg p-4 rounded-lg w-48 xl:w-52" href="#">
               <img src="./assets/images/icons/health.png" class="mx-auto rounded-full size-20 lg:size-32">
               <div class="space-y-2 text-center">
                 <p class="mb-3 font-semibold text-gray-700 text-lg">Coffee & Tea</p>
               </div>
             </a>
             <!-- icon container 4 -->
-            <a class="space-y-5 bg-white shadow hover:shadow-lg p-4 rounded-lg w-48 xl:w-64" href="#">
+            <a class="space-y-5 bg-white shadow hover:shadow-lg p-4 rounded-lg w-48 xl:w-52" href="#">
               <img src="./assets/images/icons/automotive.png" class="mx-auto rounded-full size-20 lg:size-32">
               <div class="space-y-2 text-center">
                 <p class="mb-3 font-semibold text-gray-700 text-lg">Coffee & Tea</p>
               </div>
             </a>
             <!-- icon container 5 -->
-            <a class="space-y-5 bg-white shadow hover:shadow-lg p-4 rounded-lg w-48 xl:w-64" href="#">
+            <a class="space-y-5 bg-white shadow hover:shadow-lg p-4 rounded-lg w-48 xl:w-52" href="#">
               <img src="./assets/images/icons/home.png" class="mx-auto rounded-full size-20 lg:size-32">
               <div class="space-y-2 text-center">
                 <p class="mb-3 font-semibold text-gray-700 text-lg">Coffee & Tea</p>
               </div>
             </a>
             <!-- icon container 6 -->
-            <a class="space-y-5 bg-white shadow hover:shadow-lg p-4 rounded-lg w-48 xl:w-64" href="#">
+            <a class="space-y-5 bg-white shadow hover:shadow-lg p-4 rounded-lg w-48 xl:w-52" href="#">
               <img src="./assets/images/icons/hotel.png" class="mx-auto rounded-full size-20 lg:size-32">
               <div class="space-y-2 text-center">
                 <p class="mb-3 font-semibold text-gray-700 text-lg">Coffee & Tea</p>
               </div>
             </a>
             <!-- icon container 7 -->
-            <a class="space-y-5 bg-white shadow hover:shadow-lg p-4 rounded-lg w-48 xl:w-64" href="#">
+            <a class="space-y-5 bg-white shadow hover:shadow-lg p-4 rounded-lg w-48 xl:w-52" href="#">
               <img src="./assets/images/icons/shopping.png" class="mx-auto rounded-full size-20 lg:size-32">
               <div class="space-y-2 text-center">
                 <p class="mb-3 font-semibold text-gray-700 text-lg">Coffee & Tea</p>
               </div>
             </a>
             <!-- icon container 8 -->
-            <a class="space-y-5 bg-white shadow hover:shadow-lg p-4 rounded-lg w-48 xl:w-64" href="#">
+            <a class="space-y-5 bg-white shadow hover:shadow-lg p-4 rounded-lg w-48 xl:w-52" href="#">
               <img src="./assets/images/icons/school.png" class="mx-auto rounded-full size-20 lg:size-32">
               <div class="space-y-2 text-center">
                 <p class="mb-3 font-semibold text-gray-700 text-lg">Coffee & Tea</p>
@@ -476,7 +476,7 @@
           <p>Discover List of Top Places by Collection</p>
         </div>
         <div>
-          <div class="gap-10 grid grid-cols-4">
+          <div class="gap-10 grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2">
             <!-- Collection 1 -->
             <div class="relative hover:shadow-lg aspect-3/4 overflow-hidden">
               <img src="./assets/images/dental 1.jpg" class="shadow rounded w-full h-full object-cover" alt="dental">
@@ -917,7 +917,7 @@
     <!-- Footer -->
     <footer class="bg-white py-14 border-t">
       <div class="w-8/12 mx-auto">
-        <div class="flex justify-between">
+        <div class="flex justify-between flex-wrap space-y-5">
           <!-- Column 1 -->
           <div>
             <p class="uppercase font-bold mb-2 text-gray-600">Company</p>
@@ -937,7 +937,7 @@
           </div>
           <!-- Column 3 -->
           <div>
-            <p class="uppercase font-bold mb-2 text-gray-600">Company</p>
+            <p class="uppercase font-bold mb-2 text-gray-600">Services</p>
             <ul>
               <li class="text-gray-600">Who we are?</li>
               <li class="text-gray-600">Contact Us</li>
@@ -966,7 +966,7 @@
           </div>
         </div>
         <div class="pt-12 ">
-          <p class="text-gray-600 text-sm">2025 @ Tail List. All rights reserved.</p>
+          <p class="text-gray-600 text-sm text-center lg:text-left">2025 @ Tail List. All rights reserved.</p>
         </div>
       </div>
     </footer>
@@ -990,7 +990,9 @@
       const navbar = document.querySelector('.navbar');
       // get the reference
       const heroHeader = document.querySelector('.hero-header');
-      const referencePassed = (window.scrollY + heroHeader.getBoundingClientRect().height) > heroHeader.offsetTop;
+      // const referencePassed = (window.scrollY + heroHeader.getBoundingClientRect().height) > heroHeader.offsetTop;
+
+      const referencePassed = heroHeader.getBoundingClientRect().bottom < 100;
       const navClassNames = referencePassed ? ['transparent-nav', 'bg-nav'] : ['bg-nav', 'transparent-nav'];
 
       navbar.classList.replace(...navClassNames)
